@@ -13,6 +13,59 @@
     />
   </head>
   <body>
-    <h1>Leaderboard</h1>
+    <div class="container">
+      <h1>Leaderboard</h1>
+      <div class="row">
+        <div class="col">
+          <h3>
+            Recent scores
+            <button id="refresh" type="button" class="btn btn-dark">
+              Refresh
+            </button>
+          </h3>
+          <table class="table table-striped">
+            <tbody>
+              <tr>
+                <td>Name: 100</td>
+              </tr>
+              <tr>
+                <td>Name: 20</td>
+              </tr>
+              <tr>
+                <td>Name: 50</td>
+              </tr>
+              <tr>
+                <td>Name: 78</td>
+              </tr>
+              <tr>
+                <td>Name: 125</td>
+              </tr>
+              <tr>
+                <td>Name: 77</td>
+              </tr>
+              <tr>
+                <td>Name: 42</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col">
+          <h3>Add your scores</h3>
+          <form action="/" method="post">
+            <label for="name"></label>
+            <input class="form-control" type="text" placeholder="Your name" />
+            <br />
+            <label for="score"></label>
+            <input class="form-control" type="text" placeholder="Your score" />
+            <br />
+            <div class="d-flex justify-content-end">
+              <button id="submit" type="submit" class="btn btn-dark">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
