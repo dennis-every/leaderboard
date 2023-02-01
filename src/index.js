@@ -1,6 +1,6 @@
 import './styles.css';
-import submitHandler from './submitHandler.js';
-import refreshHandler from './refreshHandler.js';
+import submitHandler from './modules/submitHandler.js';
+import refreshHandler from './modules/refreshHandler.js';
 
 const refreshBtn = document.getElementById('refresh');
 const submitBtn = document.getElementById('submit');
