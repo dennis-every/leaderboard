@@ -16,31 +16,29 @@
     <div class="container">
       <h1>Leaderboard</h1>
       <div class="row">
-        <div class="col">
-          <h3>
-            Recent scores
-            <button id="refresh" type="button" class="btn btn-dark">
-              Refresh
-            </button>
-          </h3>
-          <table class="table table-striped">
+        <div class="col px-5">
+          <div class="row py-3">
+            <div class="col">
+              <h3>Recent scores</h3>
+            </div>
+            <div class="col text-end">
+              <button id="refresh" type="button" class="btn btn-light">
+                Refresh
+              </button>
+            </div>
+          </div>
+
+          <table class="table table-striped" id="table">
             <tbody></tbody>
           </table>
         </div>
-        <div class="col">
+        <div class="col px-5">
           <h3>Add your scores</h3>
           <form action="/" method="post" id="form">
             <label for="name"></label>
-            <input
-              class="form-control"
-              type="text"
-              placeholder="Your name"
-              name="name"
-              required
-            />
+            <input type="text" placeholder="Your name" name="name" required />
             <label for="score"></label>
             <input
-              class="form-control"
               type="number"
               min="1"
               max="100"
@@ -50,7 +48,7 @@
             />
             <br />
             <div class="d-flex justify-content-end">
-              <button id="submit" type="submit" class="btn btn-dark">
+              <button id="submit" type="submit" class="btn btn-dark btn-lg">
                 Submit
               </button>
             </div>
@@ -58,5 +56,8 @@
         </div>
       </div>
     </div>
+    <footer>
+      <a href="https://github.com/dennis-every">Made by Dennis Every</a>
+    </footer>
   </body>
 </html>
