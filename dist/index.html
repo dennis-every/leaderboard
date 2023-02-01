@@ -24,39 +24,30 @@
             </button>
           </h3>
           <table class="table table-striped">
-            <tbody>
-              <tr>
-                <td>Name: 100</td>
-              </tr>
-              <tr>
-                <td>Name: 20</td>
-              </tr>
-              <tr>
-                <td>Name: 50</td>
-              </tr>
-              <tr>
-                <td>Name: 78</td>
-              </tr>
-              <tr>
-                <td>Name: 125</td>
-              </tr>
-              <tr>
-                <td>Name: 77</td>
-              </tr>
-              <tr>
-                <td>Name: 42</td>
-              </tr>
-            </tbody>
+            <tbody></tbody>
           </table>
         </div>
         <div class="col">
           <h3>Add your scores</h3>
-          <form action="/" method="post">
+          <form action="/" method="post" id="form">
             <label for="name"></label>
-            <input class="form-control" type="text" placeholder="Your name" />
-            <br />
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Your name"
+              name="name"
+              required
+            />
             <label for="score"></label>
-            <input class="form-control" type="text" placeholder="Your score" />
+            <input
+              class="form-control"
+              type="number"
+              min="1"
+              max="100"
+              placeholder="Your score"
+              name="score"
+              required
+            />
             <br />
             <div class="d-flex justify-content-end">
               <button id="submit" type="submit" class="btn btn-dark">

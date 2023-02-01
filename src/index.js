@@ -1,9 +1,13 @@
 import './styles.css';
-import submitHandler from './submitHandler.js';
-import refreshHandler from './refreshHandler.js';
+import submitEventHandler from './modules/submit.js';
+import { refresh, refreshEventHandler } from './modules/refresh.js';
 
 const refreshBtn = document.getElementById('refresh');
 const submitBtn = document.getElementById('submit');
 
-refreshBtn.addEventListener('click', refreshHandler);
-submitBtn.addEventListener('click', submitHandler);
+refreshBtn.addEventListener('click', refreshEventHandler);
+submitBtn.addEventListener('click', submitEventHandler);
+
+window.onload = () => {
+  refresh();
+};
